@@ -1,0 +1,23 @@
+
+#About this Site
+
+This website aims to help people who meditate find a comfortable posture. I am not an expert on posture, but I have read widely on the subject. I also have several years of experience in practicing meditation. During the first few years, I had some trouble with learning how to get comfortable, and I would like to help others avoid the difficulties that I initially experienced.
+
+<div class="center-image"><img src="/static/images/kodo-sawaki-panels-alpha-bright.png" class="page-standard img-responsive" style="width: 880px;"></div>
+
+##For Beginners
+
+If you are new to meditation, I would like to take this opportunity to congratulate you on taking the first steps toward what may become an extraordinary experience. There are many benefits to meditation. Do not be deterred by your preliminary troubles. Stay determined and practice every day. The journey is well worth the time and effort.
+
+##For Teachers
+
+If you are a meditation instructor or an expert on posture I would love to hear from you. I would appreciate your feedback on how the information on this site may be improved. 
+
+##A Note on Sources
+
+Much of the information on this website has been gathered from books. A list of sources is linked in the sidebar, and may also be found [here](/sources). Throughout this site, I use parenthetical references to cite to the sources in the list. These references use the last name of the author, followed by a page number.  For example, a citation to *Taking the Path of Zen* by Robert Aitken, page 15, would look like this: (Aitken 15).
+
+## Disclaimer
+
+I am not a medical doctor, and I am completely unqualified to give anyone medical advice. If you are in significant pain or are suffering from an injury or disability, please consult a physician before attempting to utilize any of the information presented here. Although I have tried to be as comprehensive as possible, much of the content here is based on my own anecdotal experience, and your own results may vary.
+

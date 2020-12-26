@@ -1,0 +1,248 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700);
+
+/*-----------------------------------*/
+/* body and links */
+/*------------------------------------*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+    background-image: url("/static/images/forest-abstract.png");
+	color: #111;
+	}
+
+a, a:visited{
+	text-decoration: none;
+    color: #355900;
+	}
+
+a:hover{
+	text-decoration: none;
+	color: #538c00;
+	}
+
+strong{
+	font-weight: 800;
+	}
+
+
+/*-----------------------------------*/
+/* title */
+/*------------------------------------*/
+
+#title{
+	margin: 20px 0 0 0;
+    padding: 7px 0;
+	font-size: 30px;
+    background: #fffff7;
+    width: 340px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#titleLink{
+    color: #111;
+}
+
+#titleLink:hover{
+    color: #111;
+}
+
+
+/*-----------------------------------*/
+/* content */
+/*------------------------------------*/
+
+div#content{
+    margin-top: 20px;
+}
+
+div#nav{
+    margin-top: 20px;
+}
+
+.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.panel-background{
+    background: #fffff7;
+	padding: 24px 20px;
+    border-radius: 5px;
+}
+
+h1{
+	margin:0;
+    margin-bottom: 18px;
+	padding: 0;
+	font-size: 26px;
+}
+
+h2{
+	margin:0;
+    margin-top: 24px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+	padding: 0;
+	font-size: 22px;
+}
+
+h3{
+	margin:0;
+    margin-left: 5px;
+	padding: 0;
+	font-size: 24px;
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+	font-size: 18px;
+	text-align: justify;
+}
+
+p a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+blockquote{
+    margin: 20px 100px 20px 70px;
+    border: none;
+    padding: 0;
+	text-align: justify;
+    font-style: italic;
+}
+
+img.page-standard{
+ margin: 30px auto;   
+ margin-bottom: 0px;
+ height: auto; 
+}
+
+#content ul{
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+#content ol{
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+#content li{
+	padding: 10px 15px;
+	font-size: 18px;
+}
+
+
+/*-----------------------------------*/
+/* navigation */
+/*------------------------------------*/
+
+
+#nav .list-group-item{
+	padding: 7px 0px;
+	font-size: 18px;
+	border: none;
+    background: #fffff7;
+}
+
+#top-nav-menu-item{
+	padding-top: 0px;
+    margin-top: 0px;
+}
+
+#bottom-nav-menu-item{
+	padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#nav ul{
+	padding: 0;
+	margin: 0;
+}
+
+#nav ul li a{
+	padding: 0;
+	margin: 0;
+}
+
+div.center-image{
+    text-align: center;
+}
+
+div.caption{
+    margin-top: 7px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+	font-weight: 600;
+}
+
+#focal{
+    font-weight: bold;
+}
+
+/*-----------------------------------*/
+/* sources */
+/*------------------------------------*/
+.sources{
+    margin-left: 20px;
+    padding: 0;
+}
+
+.sources li{
+    /* list-style-type: none; */
+}
+
+/*-----------------------------------*/
+/* contact */
+/*------------------------------------*/
+
+form#contactForm{
+    margin: 0 30px;
+}
+
+label.contact{
+	font-size: 18px;
+    font-weight: normal;
+}
+
+input#name{
+    max-width: 400px;
+}
+
+
+input#email{
+    max-width: 400px;
+}
+
+
+input#subject{
+    /*max-width: 600px;*/
+}
+
+#contactButton{
+    background-color: #355900;
+    border-color: #355900;
+    box-shadow: none;
+}
+
+.form-control:focus{
+border-color: #538c00;
+}
+
+#tips{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#tips p{
+    margin-bottom: 15px;
+	font-size: 14px;
+    color: darkred;
+}
