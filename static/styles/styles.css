@@ -68,7 +68,7 @@ div#nav{
 
 .panel-background{
     background: #fffff7;
-	padding: 24px 20px;
+	padding: 22px 20px;
     border-radius: 5px;
 }
 
@@ -144,20 +144,20 @@ img.page-standard{
 
 
 #nav .list-group-item{
-	padding: 7px 0px;
+	padding: 8px 0px;
 	font-size: 18px;
 	border: none;
     background: #fffff7;
 }
 
-#top-nav-menu-item{
-	padding-top: 0px;
-    margin-top: 0px;
+#nav #top-nav-menu-item{
+	padding-top: 0;
+    margin-top: 0;
 }
 
-#bottom-nav-menu-item{
-	padding-bottom: 0px;
-    margin-bottom: 0px;
+#nav #bottom-nav-menu-item{
+	padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 #nav ul{
@@ -276,7 +276,7 @@ border-color: #538c00;
 	}
 
 .error-message{
-    font-size: 40px;
+    font-size: 30px;
     color: #355900;
 	margin-bottom: 20px;
 	text-align: center;
