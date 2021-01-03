@@ -24,6 +24,8 @@ def index(request, page):
 
     try:
 
+        # check whether submitted page exists
+        # in the above list of pages
         pages.index(page)
 
     except:
@@ -34,7 +36,6 @@ def index(request, page):
 
         BASE_DIR = Path(__file__).resolve().parent.parent
         path = str(BASE_DIR) + '/templates/pages/' + page + '.mkd' 
-
         mkd_file = open(path, 'r', encoding='utf-8')
         mkd = mkd_file.read()
         html = markdown.markdown(mkd)
@@ -44,4 +45,4 @@ def index(request, page):
             'html': html,
             }
 
-        return render(request, 'layout.html', context)
+        return render(request, 'base.html', context)

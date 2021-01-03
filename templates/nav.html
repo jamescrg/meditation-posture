@@ -2,54 +2,67 @@
 <ul class="list-group">
     
     <li class="list-group-item" id="top-nav-menu-item">
-		<a {% if page == 'about' %} id="focal" {% endif %} href="/about">About</a>
+        <a {% if page == 'about' %} id="focal" {% endif %} 
+            href="{% url 'page' 'about' %}">About</a>
 	</li>
     
     <li class="list-group-item">
-        <a {% if page == 'start' %} id="focal" {% endif %} href="/start">Quick Start</a>
+        <a {% if page == 'start' %} id="focal" {% endif %} 
+            href="{% url 'page' 'start' %}">Quick Start</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'why' %} id="focal" {% endif %} href="/why">Why Sit</a>
+        <a {% if page == 'why' %} id="focal" {% endif %} 
+            href="{% url 'page' 'why' %}">Why Sit</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'comfort' %} id="focal" {% endif %} href="/comfort">Comfort</a>
+        <a {% if page == 'comfort' %} id="focal" {% endif %} 
+            href="{% url 'page' 'comfort' %}">Comfort</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'legs' %} id="focal" {% endif %} href="/legs">Legs</a>
+		<a {% if page == 'legs' %} id="focal" {% endif %} 
+            href="{% url 'page' 'legs' %}">Legs</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'hands' %} id="focal" {% endif %} href="/hands">Hands</a>
+		<a {% if page == 'hands' %} id="focal" {% endif %} 
+            href="{% url 'page' 'hands' %}">Hands</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'back' %} id="focal" {% endif %} href="/back">Back</a>
+		<a {% if page == 'back' %} id="focal" {% endif %} 
+            href="{% url 'page' 'back' %}">Back</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'chest' %} id="focal" {% endif %} href="/chest">Chest</a>
+		<a {% if page == 'chest' %} id="focal" {% endif %} 
+            href="{% url 'page' 'chest' %}">Chest</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'shoulders' %} id="focal" {% endif %} href="/shoulders">Shoulders</a>
+		<a {% if page == 'shoulders' %} id="focal" {% endif %} 
+            href="{% url 'page' 'shoulders' %}">Shoulders</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'head' %} id="focal" {% endif %} href="/head">Head</a>
+		<a {% if page == 'head' %} id="focal" {% endif %} 
+            href="{% url 'page' 'head' %}">Head</a>
 	</li>
     
     <li class="list-group-item">
-		<a {% if page == 'exercises' %} id="focal" {% endif %} href="/exercises">Exercises</a>
+		<a {% if page == 'exercises' %} id="focal" {% endif %} 
+            href="{% url 'page' 'exercises' %}">Exercises</a>
 	</li>
  
     <li class="list-group-item">
-		<a {% if page == 'sources' %} id="focal" {% endif %} href="/sources">Sources</a>
+		<a {% if page == 'sources' %} id="focal" {% endif %} 
+            href="{% url 'page' 'sources' %}">Sources</a>
     </li>
 
     <li class="list-group-item" id="bottom-nav-menu-item">
-		<a {% if page == 'contact' %} id="focal" {% endif %} href="/contact">Contact</a>
+		<a {% if page == 'contact' %} id="focal" {% endif %} 
+            href="{% url 'page' 'contact' %}">Contact</a>
     </li>
 </ul>
