@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/977e12cb/
+#contactButton	static/styles/styles.css	/^#contactButton{$/;"	i
+#content li	static/styles/styles.css	/^#content li{$/;"	s
+#content ol	static/styles/styles.css	/^#content ol{$/;"	s
+#content ul	static/styles/styles.css	/^#content ul{$/;"	s
+#focal	static/styles/styles.css	/^#focal{$/;"	i
+#nav #bottom-nav-menu-item	static/styles/styles.css	/^#nav #bottom-nav-menu-item{$/;"	i
+#nav #top-nav-menu-item	static/styles/styles.css	/^#nav #top-nav-menu-item{$/;"	i
+#nav .list-group-item	static/styles/styles.css	/^#nav .list-group-item{$/;"	c
+#nav ul	static/styles/styles.css	/^#nav ul{$/;"	s
+#nav ul li a	static/styles/styles.css	/^#nav ul li a{$/;"	s
+#tips	static/styles/styles.css	/^#tips{$/;"	i
+#tips p	static/styles/styles.css	/^#tips p{$/;"	s
+#title	static/styles/styles.css	/^#title{$/;"	i
+#titleLink	static/styles/styles.css	/^#titleLink{$/;"	i
+#titleLink:hover	static/styles/styles.css	/^#titleLink:hover{$/;"	i
+.col-sm-10	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.col-sm-11	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.col-sm-12	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.col-sm-2	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.col-sm-3	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.col-sm-8	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.col-sm-9	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.col-sm4	static/styles/styles.css	/^.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{$/;"	c
+.contact-message	static/styles/styles.css	/^.contact-message{$/;"	c
+.error-card	static/styles/styles.css	/^.error-card{$/;"	c
+.error-message	static/styles/styles.css	/^.error-message{$/;"	c
+.error-title	static/styles/styles.css	/^.error-title{$/;"	c
+.form-control:focus	static/styles/styles.css	/^.form-control:focus{$/;"	c
+.panel-background	static/styles/styles.css	/^.panel-background{$/;"	c
+.sources	static/styles/styles.css	/^.sources{$/;"	c
+.sources li	static/styles/styles.css	/^.sources li{$/;"	s
+.vertical-center	static/styles/styles.css	/^.vertical-center {$/;"	c
+ALLOWED_HOSTS	config/settings.py	/^ALLOWED_HOSTS = settings_local.ALLOWED_HOSTS$/;"	v
+ALLOWED_HOSTS	config/settings_local.py	/^ALLOWED_HOSTS = ['dev.meditationposture.net', 'lab.cloud-portal.com']$/;"	v
+AUTH_PASSWORD_VALIDATORS	config/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+BASE_DIR	config/settings.py	/^BASE_DIR = Path(__file__).resolve().parent.parent$/;"	v
+BASE_DIR	config/settings_local.py	/^BASE_DIR = Path(__file__).resolve().parent.parent$/;"	v
+DATABASES	config/settings.py	/^DATABASES = {$/;"	v
+DEBUG	config/settings.py	/^DEBUG = settings_local.DEBUG$/;"	v
+DEBUG	config/settings_local.py	/^DEBUG = True$/;"	v
+INSTALLED_APPS	config/settings.py	/^INSTALLED_APPS = [$/;"	v
+LANGUAGE_CODE	config/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MIDDLEWARE	config/settings.py	/^MIDDLEWARE = [$/;"	v
+PagesConfig	pages/apps.py	/^class PagesConfig(AppConfig):$/;"	c
+ROOT_URLCONF	config/settings.py	/^ROOT_URLCONF = 'config.urls'$/;"	v
+SECRET_KEY	config/settings.py	/^SECRET_KEY = settings_local.SECRET_KEY$/;"	v
+SECRET_KEY	config/settings_local.py	/^SECRET_KEY = 'TZBLVJLZy6WggKKHYBfyh90czS2sgsOK1sS5xxckiJU'$/;"	v
+STATICFILES_DIRS	config/settings.py	/^STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]$/;"	v
+STATIC_URL	config/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+SiteViewTest	config/tests.py	/^class SiteViewTest(TestCase):$/;"	c
+TEMPLATES	config/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	config/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USE_I18N	config/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	config/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	config/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	config/settings.py	/^WSGI_APPLICATION = 'config.wsgi.application'$/;"	v
+a	static/styles/styles.css	/^a, a:visited{$/;"	s
+a:hover	static/styles/styles.css	/^a:hover{$/;"	s
+a:visited	static/styles/styles.css	/^a, a:visited{$/;"	s
+application	config/asgi.py	/^application = get_asgi_application()$/;"	v
+application	config/wsgi.py	/^application = get_wsgi_application()$/;"	v
+blockquote	static/styles/styles.css	/^blockquote{$/;"	s
+body	static/styles/styles.css	/^body{$/;"	s
+bottom-nav-menu-item	templates/nav.html	/^    <li class="list-group-item" id="bottom-nav-menu-item">$/;"	I
+content	templates/base.html	/^            <div id="content" class="col-sm-10">$/;"	I
+div#content	static/styles/styles.css	/^div#content{$/;"	i
+div#nav	static/styles/styles.css	/^div#nav{$/;"	i
+div.caption	static/styles/styles.css	/^div.caption{$/;"	c
+div.center-image	static/styles/styles.css	/^div.center-image{$/;"	c
+focal	templates/nav.html	/^		<a {% if page == 'back' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'chest' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'contact' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'exercises' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'hands' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'head' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'legs' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'shoulders' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^		<a {% if page == 'sources' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^        <a {% if page == 'about' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^        <a {% if page == 'comfort' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^        <a {% if page == 'start' %} id="focal" {% endif %} $/;"	I
+focal	templates/nav.html	/^        <a {% if page == 'why' %} id="focal" {% endif %} $/;"	I
+form#contactForm	static/styles/styles.css	/^form#contactForm{$/;"	i
+h1	static/styles/styles.css	/^h1{$/;"	s
+h2	static/styles/styles.css	/^h2{$/;"	s
+h3	static/styles/styles.css	/^h3{$/;"	s
+img.page-standard	static/styles/styles.css	/^img.page-standard{$/;"	c
+index	pages/views.py	/^def index(request, page):$/;"	f
+input#email	static/styles/styles.css	/^input#email{$/;"	i
+input#name	static/styles/styles.css	/^input#name{$/;"	i
+input#subject	static/styles/styles.css	/^input#subject{$/;"	i
+label.contact	static/styles/styles.css	/^label.contact{$/;"	c
+main	manage.py	/^def main():$/;"	f
+name	pages/apps.py	/^    name = 'pages'$/;"	v	class:PagesConfig
+nav	templates/base.html	/^            <div id="nav" class="col-sm-2">$/;"	I
+p	static/styles/styles.css	/^p{$/;"	s
+p a	static/styles/styles.css	/^p a{$/;"	s
+setUp	config/tests.py	/^    def setUp(self):$/;"	m	class:SiteViewTest
+strong	static/styles/styles.css	/^strong{$/;"	s
+test_view_all_page_routes	config/tests.py	/^    def test_view_all_page_routes(self):$/;"	m	class:SiteViewTest
+test_view_base_url	config/tests.py	/^    def test_view_base_url(self):$/;"	m	class:SiteViewTest
+test_view_index_route	config/tests.py	/^    def test_view_index_route(self):$/;"	m	class:SiteViewTest
+test_view_page_route	config/tests.py	/^    def test_view_page_route(self):$/;"	m	class:SiteViewTest
+test_view_uses_correct_template	config/tests.py	/^    def test_view_uses_correct_template(self):$/;"	m	class:SiteViewTest
+title	templates/base.html	/^                <div id="title"><a href="\/" $/;"	I
+titleLink	templates/base.html	/^                    id="titleLink">meditationposture.net<\/a><\/div>$/;"	I
+top-nav-menu-item	templates/nav.html	/^    <li class="list-group-item" id="top-nav-menu-item">$/;"	I
+urlpatterns	config/urls.py	/^urlpatterns = [$/;"	v
+urlpatterns	pages/urls.py	/^urlpatterns = [$/;"	v
