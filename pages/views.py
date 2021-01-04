@@ -1,4 +1,3 @@
-
 from django.shortcuts import render
 import markdown
 from pathlib import Path
