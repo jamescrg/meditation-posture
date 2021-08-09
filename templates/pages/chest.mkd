@@ -16,7 +16,7 @@ This way or rotating the chest forward has the effect of engaging one of the imp
 
 Porter says that anchoring the chest “accomplishes several things at once: (1) it lessens the arching of the lower back, (2) it positions the rib cage along the axis, and (3) it engages the core that stabilizes everything in place.” (Porter 68) Here is an image showing where the trans ab is located in red.
 
-<div class="center-image"><img src="/images/transab.png" class="page-standard img-responsive" style="width: 250px"></div>
+<div class="center-image"><img src="/static/images/transab.png" class="page-standard img-responsive" style="width: 250px"></div>
 
 Porter also provides an exercise to help her students get a feel for engaging the deep supportive core: First, relax the belly. Then, pretend to blow out dozens of candles in one continuous stream. Keep blowing until you sense a firming of muscles around your middle. Next, cough several times. (Porter 74) The result of these efforts should be that you can feel the trans ab and other related core muscles contracting. Those are the muscles that should support your posture.
 
@@ -24,7 +24,7 @@ Porter also provides an exercise to help her students get a feel for engaging th
 
 Gokhale has a similar view of chest alignment. She advises that we should anchor the rib cage, and in so doing "[c]ontract the upper abdominal muscles to pull the rib cage downward and inward, thus lengthening and straightening the low back.” (Gokhale 82) This uses several abdominal muscles, especially the internal obliques. (Gokhale 84) Note that these are different from the "six pack" abdominal muscles that control the tone of the belly.
 
-<div class="center-image"><img src="/images/abs.jpg" class="page-standard img-responsive" style="width: 600px"></div>
+<div class="center-image"><img src="/static/images/abs.jpg" class="page-standard img-responsive" style="width: 600px"></div>
 
 Gokhale also gives some helpful advice on how to get a feel for the position of the chest. First, establish a sitting position with forward pelvic tilt. Then, reach up above you with both hands. Straighten your arms and visualize reaching for the top of a high cabinet. Gokhale suggests, “Try to find the direction of stretch that gives you length in your back rather than your front. . . . It may help to imagine you are reaching up and over a bar at chest height.” (Gokhale 117)
 

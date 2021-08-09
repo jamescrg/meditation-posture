@@ -38,7 +38,7 @@ It is common to hear or read posture advice from meditation teachers to the effe
 
 The diagram below shows the four curves of the spine. Note the curve of the lower back and the opposite curve of the upper back, along with the curvature of the neck.
 
-<div class="center-image"><img src="/images/posture-diagram-cropped-and-scaled.png" class="page-standard img-responsive"></div>
+<div class="center-image"><img src="/static/images/posture-diagram-cropped-and-scaled.png" class="page-standard img-responsive"></div>
 <div class="caption">The natural curvature of the spine (Sogen 1996)</div>
 
 In addition, there is quite a bit of variability from one individual to another in terms of how much spinal curvature they exhibit. For example, I have considerable curvature in my neck, thoracic spine, and lower back.

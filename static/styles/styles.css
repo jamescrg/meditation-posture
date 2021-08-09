@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 /*-----------------------------------*/
 /* body and links */
@@ -22,7 +22,7 @@ a:hover{
 	}
 
 strong{
-	font-weight: 800;
+	font-weight: 600;
 	}
 
 

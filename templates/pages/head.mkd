@@ -11,7 +11,7 @@ If the opposite is done, if the chin is lifted or extended, then the muscles in 
 
 One common way of trying to get the feel of keeping a tucked chin, without drooping the head, is to imagine you have a string attached to the crown of your head, drawing your head up toward the ceiling. This is can be a very helpful visualization. But remember, be careful not to lift the chest. Also, this is at most a light effort. Be sure not to strain.
 
-<div class="center-image"><img src="/images/posture-diagram-cropped-and-scaled.png" class="page-standard img-responsive"></div>
+<div class="center-image"><img src="/static/images/posture-diagram-cropped-and-scaled.png" class="page-standard img-responsive"></div>
 <div class="caption">Head thrust upwards; draw chin in (Sogen 1996)</div>
 
 ## Other Perspectives
