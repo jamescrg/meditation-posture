@@ -8,7 +8,7 @@ If you are just getting started with meditation, you may hear about placing the 
 
 Probably the most widely-known  mudra today is the “cosmic mudra”. You can form the cosmic mudra by placing your hands in your lap facing upward. Place one hand on top of the other. Line up the first knuckle of your top ring finger with the second knuckle of the bottom ring finger. Touch the tips of your thumbs together to form a gentle oval. 
 
-<div class="center-image"><img src="/static/images/sit-lotus-quarter.png" class="page-standard img-responsive" style="width: 500px;"></div>
+<div class="center-image"><img src="/images/sit-lotus-quarter.png" class="page-standard img-responsive" style="width: 500px;"></div>
 <div class="caption">Hands resting in "cosmic mudra"</div>
 
 The cosmic mudra is a very comfortable position for the hands over long periods of time, which is probably one of the reasons for its popularity. In addition, because the thumbs rest very lightly against one another, this mudra can be a useful indicator of the quality of your posture or attention. If you find yourself off balance or slumping, or if your mind is wandering, the first sign of trouble may be a subtle degradation in the shape of the mudra.

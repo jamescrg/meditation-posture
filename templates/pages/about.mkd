@@ -1,9 +1,8 @@
-
 #About this Site
 
 This website aims to help people who meditate find a comfortable posture. I am not an expert on posture, but I have read widely on the subject. I also have several years of experience in practicing meditation. During the first few years, I had some trouble with learning how to get comfortable, and I would like to help others avoid the difficulties that I initially experienced.
 
-<div class="center-image"><img src="/static/images/kodo-sawaki-panels-alpha-bright.png" class="page-standard img-responsive" style="width: 880px;"></div>
+<div class="center-image"><img src="/images/kodo-sawaki-panels-alpha-bright.png" class="page-standard img-responsive" style="width: 880px;"></div>
 
 ##For Beginners
 
@@ -20,4 +19,3 @@ Much of the information on this website has been gathered from books. A list of 
 ## Disclaimer
 
 I am not a medical doctor, and I am completely unqualified to give anyone medical advice. If you are in significant pain or are suffering from an injury or disability, please consult a physician before attempting to utilize any of the information presented here. Although I have tried to be as comprehensive as possible, much of the content here is based on my own anecdotal experience, and your own results may vary.
-
