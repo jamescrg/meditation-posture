@@ -44,4 +44,4 @@ def index(request, page):
             'html': html,
             }
 
-        return render(request, 'base.html', context)
+        return render(request, 'layout.html', context)

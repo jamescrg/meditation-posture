@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165756037-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165756037-2');
+</script>
+
+<meta charset="UTF-8" content="">
+<title>meditationposture.net</title>
+<link rel="shortcut icon" href="">
+<link rel="apple-touch-icon" href="">
+
+<!-- set viewport for mobile devices -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+<!-- bootstrap stylesheet -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- app stylesheets -->
+<link rel="stylesheet" href="/static/styles/styles.css">
+
+<div class="container"> 
+
+  <div class="row title">
+
+    <div class="col-sm-12">
+
+        <div class="title-inner">
+          <a href="/" id="title-link">meditationposture.net</a>
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="row content">
+
+    <div class="col-sm-10 content-left">
+
+      <div class="panel-background">
+          {{ html | safe }}
+      </div>
+
+    </div>
+
+    <div class="col-sm-2 nav">
+
+      <div class="panel-background">
+          {% include 'nav.html' %}
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- bootstrap javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+

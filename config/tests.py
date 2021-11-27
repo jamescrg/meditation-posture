@@ -41,4 +41,4 @@ class SiteViewTest(TestCase):
     def test_view_uses_correct_template(self):
         for page in self.pages:
             resp = self.client.get(reverse('page', args=[page]))
-            self.assertTemplateUsed(resp, 'base.html')
+            self.assertTemplateUsed(resp, 'layout.html')

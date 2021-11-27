@@ -1,5 +1,6 @@
 {
     "ignore": [
-        "ids"
+        "ids",
+        "import"
     ]
 }

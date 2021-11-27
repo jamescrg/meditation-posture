@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
-/*-----------------------------------*/
-/* body and links */
-/*------------------------------------*/
+/*------------------------------------------------
+body and links
+------------------------------------------------*/
 
 body {
   background-image: url("/static/images/forest-abstract.png");
@@ -16,21 +16,21 @@ a, a:visited {
 	text-decoration: none;
 }
 
-a:hover{
+a:hover {
 	color: #538c00;
 	text-decoration: none;
 }
 
-trong{ 
+strong { 
 	font-weight: 600;
 }
 
 
-/*-----------------------------------*/
-/* title */
-/*------------------------------------*/
+/*------------------------------------------------
+title
+------------------------------------------------*/
 
-#title {
+.title-inner {
   background: #fffff7;
   border-radius: 5px;
 	font-size: 30px;
@@ -40,28 +40,25 @@ trong{
   width: 340px;
 }
 
-#titleLink {
+.title-inner a {
   color: #111;
 }
 
-#titleLink:hover {
+.title-inner a:hover {
   color: #111;
 }
 
 
-/*-----------------------------------*/
-/* content */
-/*------------------------------------*/
+/*------------------------------------------------
+layout
+------------------------------------------------*/
 
-#content {
+.content {
   margin-top: 20px;
 }
 
-#nav {
-  margin-top: 20px;
-}
-
-.col-sm-2, .col-sm-3, .col-sm4, .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{
+.col-sm-2, .col-sm-3, .col-sm4, 
+.col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -71,6 +68,11 @@ trong{
   border-radius: 5px;
 	padding: 22px 20px;
 }
+
+
+/*------------------------------------------------
+typography
+------------------------------------------------*/
 
 h1 {
 	font-size: 26px;
@@ -98,12 +100,12 @@ p {
 	text-align: justify;
 }
 
-p a{
+p a {
   font-weight: 600;
   text-decoration: underline;
 }
 
-blockquote{
+blockquote {
   border: none;
   font-style: italic;
   margin: 20px 100px 20px 70px;
@@ -111,60 +113,59 @@ blockquote{
 	text-align: justify;
 }
 
-.page-standard{
+.page-standard {
  height: auto; 
  margin: 30px auto 0 auto;
 }
 
-#content ul{
+.content ul {
   margin-left: 15px;
   margin-top: -10px;
 }
 
-#content ol{
+.content ol {
   margin-left: 15px;
   margin-top: -10px;
 }
 
-#content li{
+.content li {
 	font-size: 18px;
 	padding: 10px 15px;
 }
 
 
-/*-----------------------------------*/
-/* navigation */
-/*------------------------------------*/
+/*------------------------------------------------
+navigation
+------------------------------------------------*/
 
-
-#nav .list-group-item{
+.nav .list-group-item {
   background: #fffff7;
 	border: none;
 	font-size: 18px;
 	padding: 8px 0;
 }
 
-#nav #top-nav-menu-item{
+.nav .top-nav-menu-item {
   margin-top: 0;
 	padding-top: 0;
 }
 
-#nav #bottom-nav-menu-item{
+.nav .bottom-nav-menu-item {
   margin-bottom: 0;
 	padding-bottom: 0;
 }
 
-#nav ul{
+.nav ul {
 	margin: 0;
 	padding: 0;
 }
 
-#nav ul li a{
+.nav ul li a {
 	margin: 0;
 	padding: 0;
 }
 
-.center-image{
+.center-image {
   text-align: center;
 }
 
@@ -176,14 +177,15 @@ blockquote{
   text-align: center;
 }
 
-#focal{
+#focal {
   font-weight: bold;
 }
 
-/*-----------------------------------*/
-/* sources */
-/*------------------------------------*/
-.sources{
+/*------------------------------------------------
+sources
+------------------------------------------------*/
+
+.sources {
   margin-left: 20px;
   padding: 0;
 }
