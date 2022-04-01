@@ -5,6 +5,7 @@ body and links
 ------------------------------------------------*/
 
 body {
+  background: #64685a;
   background-image: url("/static/images/forest-abstract.png");
 	color: #111;
 	font-family: 'Open Sans', sans-serif;
@@ -21,7 +22,7 @@ a:hover {
 	text-decoration: none;
 }
 
-strong { 
+strong {
 	font-weight: 600;
 }
 
@@ -57,7 +58,7 @@ layout
   margin-top: 20px;
 }
 
-.col-sm-2, .col-sm-3, .col-sm4, 
+.col-sm-2, .col-sm-3, .col-sm4,
 .col-sm-8, .col-sm-9, .col-sm-10,.col-sm-11,.col-sm-12{
   padding-left: 8px;
   padding-right: 8px;
@@ -114,7 +115,7 @@ blockquote {
 }
 
 .page-standard {
- height: auto; 
+ height: auto;
  margin: 30px auto 0 auto;
 }
 
