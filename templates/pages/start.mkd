@@ -4,12 +4,17 @@ If you are eager to get started and would prefer not to wade through the rest of
 
 <ol id="start">
 
-    <li>Get a zafu. You can buy one online. A zafu is simply a meditation cushion. They come in a wide variety of shapes and with different kinds of filing. Get one with buckwheat hull filling.</li>
+    <li>Get a zafu. You can buy one online. A zafu is simply a meditation cushion. They come in a wide variety of shapes and with different kinds of filing. Get one with buckwheat hull or kapok filling.</li>
 
     <div class="center-image"><img src="/static/images/zafu.png" class="page-standard img-responsive" style="width: 350px;"></div>
     <div class="caption">A typical round zafu</div>
 
     <li>Once you have your zafu, find a quiet place in your home for sitting and put the zafu there on the floor. Sit down on the cushion and cross your legs. You'll want to sit toward the front of the cushion.</li>
+
+    <li>Try placing your legs in the "Burmese" position. It looks like the picture below. If you don't have the flexibility to sit in the Burmese position, just cross your legs as you normally would. However, you might prefer the <a href="/legs">Seiza</a> position. </li>
+
+    <div class="center-image"><img src="/static/images/sit-burmese.png" class="page-standard img-responsive" style="width: 500px;"></div>
+    <div class="caption">Burmese Position</div>
 
     <li>Adjust the height of your zafu. If you find yourself slumping, it probably needs to be higher. You can fold a towel and place it under the zafu to gain more height. If you need still more height, add another towel.</li>
 
@@ -20,9 +25,7 @@ If you are eager to get started and would prefer not to wade through the rest of
 
     <li>Keep your chest neutral. Do not consciously lift your sternum.</li>
 
-    <li>For now, don't worry about your shoulders.</li>
-
-    <li>Bring your chin slightly down. Keep the back of your neck long.</li>
+    <li>Bring your chin slightly in. Keep your head level.</li>
 
     <li>Relax as much as possible.</li>
 
