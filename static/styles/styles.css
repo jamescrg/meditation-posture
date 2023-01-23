@@ -15,6 +15,7 @@ body {
 
 a, a:visited {
   color: #355900;
+  outline: none;
 	text-decoration: none;
 }
 
