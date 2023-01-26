@@ -67,7 +67,7 @@ def contact(request):
             message = form.cleaned_data['message']
 
             send_mail(
-                subject,
+                'MP - ' + name + ' ' + subject,
                 message,
                 email,
                 settings_local.AUTHOR,
