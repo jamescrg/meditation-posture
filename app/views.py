@@ -2,6 +2,9 @@ from django.shortcuts import render
 import markdown
 from pathlib import Path
 from django.shortcuts import redirect
+from app.forms import ContactForm
+from django.core.mail import send_mail
+from config import settings_local
 
 def index(request, page):
 
@@ -34,7 +37,7 @@ def index(request, page):
     else:
 
         BASE_DIR = Path(__file__).resolve().parent.parent
-        path = str(BASE_DIR) + '/templates/pages/' + page + '.mkd'
+        path = str(BASE_DIR) + '/templates/articles/' + page + '.mkd'
         mkd_file = open(path, 'r', encoding='utf-8')
         mkd = mkd_file.read()
         html = markdown.markdown(mkd)
@@ -44,23 +47,44 @@ def index(request, page):
             'html': html,
             }
 
-        return render(request, 'layout.html', context)
+        return render(request, 'article.html', context)
 
 
-def email_test(request):
-    """Test whether app can send an email
+def contact(request):
+    """Allow the user to send an email to the author.
 
     """
-    from django.core.mail import send_mail
-    from config import settings_local
-    from django.http import HttpResponse
 
-    # send_mail(
-    #     'Test Message from MP',
-    #     'The message was sent successfully! 12:58',
-    #     settings_local.SERVER_EMAIL,
-    #     settings_local.TEST_EMAIL_RECIPIENT,
-    #     fail_silently=False,
-    # )
+    if request.method == 'POST':
 
-    return HttpResponse('email not sent')
+        form = ContactForm(request.POST)
+
+        if form.is_valid():
+
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+
+            send_mail(
+                subject,
+                message,
+                email,
+                settings_local.AUTHOR,
+                fail_silently=False,
+            )
+            context = {
+                'page': 'contact',
+            }
+            return render(request, 'contact-success.html', context)
+
+    else:
+
+        form = ContactForm()
+
+    context = {
+        'page': 'contact',
+        'form': form,
+    }
+
+    return render(request, 'contact.html', context)

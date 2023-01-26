@@ -1,0 +1,22 @@
+
+
+{% extends 'layout.html' %}
+{% block content %}
+
+<h1>Contact</h1>
+
+<p>You are welcome to send me an email using the form below:</p>
+
+	<form action="/contact/" class="form-horizontal" method="post" role="form">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <p>
+      <input type="submit" value="Submit" class="btn btn-default">
+    </p>
+
+	</form>
+
+{% endblock content %}

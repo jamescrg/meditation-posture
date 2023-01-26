@@ -69,6 +69,7 @@ layout
 .panel-background {
   background: #fffff7;
   border-radius: 5px;
+  margin-bottom: 20px;
 	padding: 22px 20px;
 }
 
@@ -114,6 +115,14 @@ blockquote {
   margin: 20px 100px 20px 70px;
   padding: 0;
 	text-align: justify;
+}
+
+@media (max-width: 768px) {
+  blockquote {
+    margin-left: 40px;
+    margin-right: 30px;
+    text-align: center;
+  }
 }
 
 .page-standard {
@@ -184,6 +193,13 @@ navigation
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .nav ul li {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
 /*------------------------------------------------
 sources
 ------------------------------------------------*/
@@ -192,3 +208,59 @@ sources
   margin-left: 20px;
   padding: 0;
 }
+
+
+/*------------------------------------------------
+contact
+------------------------------------------------*/
+
+input, label {
+    display:block;
+}
+
+label {
+  font-weight: normal;
+}
+
+input, textarea {
+  border: solid 1px #d4d4d4;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#id_name {
+  max-width: 400px;
+  width: 100%;
+}
+
+#id_email {
+  max-width: 400px;
+  width: 100%;
+}
+
+#id_subject {
+  max-width: 700px;
+  width: 100%;
+}
+
+textarea {
+  max-width: 700px;
+  width: 100%;
+}
+
+.btn-default {
+	background: #b7b7b72b;
+  color: #355900;
+  font-size: 16px;
+}
+
+input:focus-visible {
+    border-radius: 3px;
+    outline: 1px solid #355900;
+}
+
+textarea:focus-visible {
+    border-radius: 3px;
+    outline: 1px solid #355900;
+}
+

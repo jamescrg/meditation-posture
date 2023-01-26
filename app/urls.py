@@ -5,6 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, {'page': 'about'}, name='index'),
-    path('email/', views.email_test, name='email-test'),
+    path('contact/', views.contact, name='contact'),
     path('<str:page>/', views.index, name='page'),
 ]
