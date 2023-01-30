@@ -249,8 +249,11 @@ textarea {
 }
 
 .btn-default {
-	background: #b7b7b72b;
-  color: #355900;
+	/* background: #b7b7b72b; */
+  /* color: #355900; */
+  background: #2f4f00;
+  border: solid 1px #2f4f00;
+  color: #fffff7;
   font-size: 16px;
 }
 
