@@ -2,4 +2,4 @@ tags
 config/settings_local.py
 *.pyc
 gunicorn.conf.py
-
+logs/
