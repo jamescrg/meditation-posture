@@ -1,4 +1,3 @@
-
 # from django.shortcuts import render
 # import markdown
 # from pathlib import Path
@@ -35,7 +34,7 @@
 #     else:
 
 #         BASE_DIR = Path(__file__).resolve().parent.parent
-#         path = str(BASE_DIR) + '/templates/pages/' + page + '.mkd' 
+#         path = str(BASE_DIR) + '/templates/pages/' + page + '.mkd'
 #         mkd_file = open(path, 'r', encoding='utf-8')
 #         mkd = mkd_file.read()
 #         html = markdown.markdown(mkd)
