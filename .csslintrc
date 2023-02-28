@@ -1,6 +1,1 @@
-{
-    "ignore": [
-        "ids",
-        "import"
-    ]
-}
+--ignore = ids,box-model,known-properties

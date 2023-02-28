@@ -1,9 +1,10 @@
-from django.shortcuts import render
-import markdown
 from pathlib import Path
-from django.shortcuts import redirect
-from app.forms import ContactForm
+
+import markdown
 from django.core.mail import send_mail
+from django.shortcuts import redirect, render
+
+from app.forms import ContactForm
 from config import settings_local
 
 
