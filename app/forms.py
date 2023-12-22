@@ -2,6 +2,7 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
 from django_recaptcha.fields import ReCaptchaField
+from django_recaptcha.widgets import ReCaptchaV3
 
 
 class ContactForm(forms.Form):
@@ -13,7 +14,7 @@ class ContactForm(forms.Form):
         max_length=250,
         widget=forms.Textarea(attrs={"rows": 5, "cols": 60}),
     )
-    captcha = ReCaptchaField()
+    captcha = ReCaptchaField(widget=ReCaptchaV3)
 
     def clean_name(self):
         name = self.cleaned_data["name"]
