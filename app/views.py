@@ -1,8 +1,8 @@
 from pathlib import Path
 
-import markdown
 from django.core.mail import send_mail
 from django.shortcuts import redirect, render
+import markdown
 
 from app.forms import ContactForm
 from config import settings_local
@@ -60,11 +60,12 @@ def contact(request):
             subject = form.cleaned_data["subject"]
             message = form.cleaned_data["message"]
 
+            message = "From: " + email + "\n\n" + message
+
             send_mail(
                 "MP - " + name + " " + subject,
                 message,
                 email,
-                settings_local.AUTHOR,
                 fail_silently=False,
             )
             context = {
