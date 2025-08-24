@@ -60,12 +60,14 @@ def contact(request):
             subject = form.cleaned_data["subject"]
             message = form.cleaned_data["message"]
 
-            message = "From: " + email + "\n\n" + message
+            # Include sender information in the message body
+            message = f"From: {name}\nEmail: {email}\n\n{message}"
 
             send_mail(
                 "MP - " + name + " " + subject,
                 message,
-                email,
+                settings_local.SERVER_EMAIL,  # Use the server's email as sender
+                settings_local.AUTHOR,
                 fail_silently=False,
             )
             context = {
