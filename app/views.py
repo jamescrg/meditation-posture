@@ -64,7 +64,7 @@ def contact(request):
             message = f"From: {name}\nEmail: {email}\n\n{message}"
 
             send_mail(
-                "MP - " + name + " " + subject,
+                "meditationposture.net - " + name + " " + subject,
                 message,
                 settings_local.SERVER_EMAIL,  # Use the server's email as sender
                 settings_local.AUTHOR,
