@@ -7,11 +7,11 @@ body and links
 
 body {
   background: #b8c5d0;
-  background-image: url("/static/images/misty-field.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url("/static/images/misty-field.webp"), url("/static/images/misty-field-tiny.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
 	color: var(--stone-800);
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
@@ -39,11 +39,19 @@ title navbar
 ------------------------------------------------*/
 
 .navbar-title {
-  background: var(--stone-50);
-  border-bottom: solid 1px var(--stone-400);
+  /* background: var(--stone-50); */
+  background: rgba(250, 250, 249, 0.9);
+  /* border-bottom: solid 1px var(--stone-400); */
 	font-size: 22px;
   padding: 12px 0;
+  position: sticky;
+  top: 0;
   width: 100%;
+  z-index: 1000;
+}
+
+.title-link {
+  background: rgba(250, 250, 249, 0.3);
 }
 
 .navbar-title a {
@@ -61,7 +69,7 @@ layout
 ------------------------------------------------*/
 
 .content {
-  margin-top: 15px;
+  margin-top: 2rem;
 }
 
 .col-sm-2, .col-sm-3, .col-sm4,
