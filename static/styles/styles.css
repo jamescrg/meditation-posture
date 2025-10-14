@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('/static/styles/colors.css');
 
 /*------------------------------------------------
 body and links
 ------------------------------------------------*/
 
 body {
-  background: #525750;
-  background-image: url("/static/images/forest-abstract.png");
+  background: #b8c5d0;
+  background-image: url("/static/images/misty-field.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 	color: #111;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
@@ -34,7 +39,7 @@ title
 ------------------------------------------------*/
 
 .title-inner {
-  background: #fffff7;
+  background: rgba(248, 250, 252, 0.9);
   border-radius: 5px;
 	font-size: 30px;
 	margin: 20px 0 0 0;
@@ -67,7 +72,7 @@ layout
 }
 
 .panel-background {
-  background: #fffff7;
+  background: rgba(248, 250, 252, 0.9);
   border-radius: 5px;
   margin-bottom: 20px;
 	padding: 22px 20px;
@@ -151,7 +156,7 @@ navigation
 ------------------------------------------------*/
 
 .nav .list-group-item {
-  background: #fffff7;
+  background: none;
 	border: none;
 	font-size: 18px;
 	padding: 8px 0;
