@@ -12,20 +12,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-	color: #111;
+	color: var(--stone-800);
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
   padding-bottom: 40px;
 }
 
 a, a:visited {
-  color: #355900;
+  color: var(--lime-800);
   outline: none;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #538c00;
+	color: var(--lime-600);
 	text-decoration: none;
 }
 
@@ -35,25 +35,25 @@ strong {
 
 
 /*------------------------------------------------
-title
+title navbar
 ------------------------------------------------*/
 
-.title-inner {
-  background: rgba(248, 250, 252, 0.9);
-  border-radius: 5px;
-	font-size: 30px;
-	margin: 20px 0 0 0;
-  padding: 7px 0;
-  text-align: center;
-  width: 340px;
+.navbar-title {
+  background: var(--slate-50);
+  border-bottom: solid 1px var(--lime-700);
+	font-size: 20px;
+	margin: 0;
+  padding: 12px 0;
+  width: 100%;
 }
 
-.title-inner a {
-  color: #111;
+.navbar-title a {
+  color: var(--stone-800);
+  text-decoration: none;
 }
 
-.title-inner a:hover {
-  color: #111;
+.navbar-title a:hover {
+  color: var(--stone-900);
 }
 
 
@@ -62,7 +62,7 @@ layout
 ------------------------------------------------*/
 
 .content {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .col-sm-2, .col-sm-3, .col-sm4,
@@ -84,6 +84,7 @@ typography
 ------------------------------------------------*/
 
 h1 {
+	color: var(--stone-900);
 	font-size: 26px;
 	margin:0;
   margin-bottom: 18px;
@@ -91,12 +92,14 @@ h1 {
 }
 
 h2 {
+	color: var(--stone-800);
 	font-size: 22px;
 	margin: 24px 0 18px 10px;
 	padding: 0;
 }
 
 h3 {
+	color: var(--stone-800);
 	font-size: 24px;
 	margin:0;
   margin-left: 5px;
@@ -116,6 +119,7 @@ p a {
 
 blockquote {
   border: none;
+  color: var(--stone-700);
   font-style: italic;
   margin: 20px 100px 20px 70px;
   padding: 0;
@@ -146,6 +150,7 @@ blockquote {
 }
 
 .content li {
+	color: var(--stone-800);
 	font-size: 18px;
 	padding: 10px 15px;
 }
@@ -187,6 +192,7 @@ navigation
 }
 
 .caption{
+  color: var(--stone-700);
   font-size: 14px;
 	font-weight: 600;
   margin-bottom: 20px;
@@ -224,6 +230,7 @@ input, label {
 }
 
 label {
+  color: var(--stone-800);
   font-weight: normal;
 }
 
@@ -256,19 +263,19 @@ textarea {
 .btn-default {
 	/* background: #b7b7b72b; */
   /* color: #355900; */
-  background: #2f4f00;
-  border: solid 1px #2f4f00;
-  color: #fffff7;
+  background: var(--lime-700);
+  border: solid 1px var(--lime-700);
+  color: var(--slate-50);
   font-size: 16px;
 }
 
 input:focus-visible {
     border-radius: 3px;
-    outline: 1px solid #355900;
+    outline: 1px solid var(--lime-600);
 }
 
 textarea:focus-visible {
     border-radius: 3px;
-    outline: 1px solid #355900;
+    outline: 1px solid var(--lime-600);
 }
 
