@@ -134,3 +134,5 @@ ADMINS = settings_local.ADMINS
 # RECAPTCHA
 RECAPTCHA_PUBLIC_KEY = settings_local.RECAPTCHA_PUBLIC_KEY
 RECAPTCHA_PRIVATE_KEY = settings_local.RECAPTCHA_PRIVATE_KEY
+RECAPTCHA_REQUIRED_SCORE = 0.5  # Score threshold for v3 (0.0 to 1.0, lower is more lenient)
+RECAPTCHA_DOMAIN = "www.google.com"  # Use "www.recaptcha.net" if google.com is blocked
