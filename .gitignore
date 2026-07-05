@@ -3,3 +3,11 @@ config/settings_local.py
 *.pyc
 gunicorn.conf.py
 logs/
+.venv/
+
+# app logs (keep dir, ignore log files)
+logs/*
+!logs/.gitkeep
+
+# Claude Code local settings
+.claude/

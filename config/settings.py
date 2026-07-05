@@ -129,6 +129,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = settings_local.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = settings_local.EMAIL_HOST_PASSWORD
 SERVER_EMAIL = settings_local.SERVER_EMAIL
+DEFAULT_FROM_EMAIL = getattr(settings_local, "DEFAULT_FROM_EMAIL", settings_local.SERVER_EMAIL)
 ADMINS = settings_local.ADMINS
 
 # RECAPTCHA
@@ -136,3 +137,30 @@ RECAPTCHA_PUBLIC_KEY = settings_local.RECAPTCHA_PUBLIC_KEY
 RECAPTCHA_PRIVATE_KEY = settings_local.RECAPTCHA_PRIVATE_KEY
 RECAPTCHA_REQUIRED_SCORE = 0.5  # Score threshold for v3 (0.0 to 1.0, lower is more lenient)
 RECAPTCHA_DOMAIN = "www.google.com"  # Use "www.recaptcha.net" if google.com is blocked
+
+
+# Logging — standardized across all apps; logs live in <app>/logs/
+(BASE_DIR / "logs").mkdir(exist_ok=True)
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {"format": "{asctime} [{levelname}] {name}: {message}", "style": "{"},
+    },
+    "handlers": {
+        "console": {"class": "logging.StreamHandler", "formatter": "verbose"},
+        "file": {
+            "class": "logging.FileHandler",
+            "filename": BASE_DIR / "logs" / "django.log",
+            "formatter": "verbose",
+        },
+        "null": {"class": "logging.NullHandler"},
+    },
+    "root": {"handlers": ["console", "file"], "level": "WARNING"},
+    "loggers": {
+        # Bot-driven bad Host headers are benign; drop them instead of dumping a
+        # full traceback per hit (this was chf's 117 MB error-log flood).
+        "django.security.DisallowedHost": {"handlers": ["null"], "propagate": False},
+    },
+}
