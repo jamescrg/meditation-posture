@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
 
 <meta charset="UTF-8" content="">
 <title>meditationposture.net</title>
@@ -11,11 +13,10 @@
 <!-- preload background image -->
 <link rel="preload" as="image" href="/static/images/misty-field.webp">
 
-<!-- bootstrap stylesheet -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-<!-- app stylesheets -->
-<link rel="stylesheet" href="/static/styles/styles.css">
+<!-- app stylesheets, versioned so browsers pick up changes -->
+{% load cache_busting %}
+<link rel="stylesheet" href="{% static_versioned 'styles/colors.css' %}">
+<link rel="stylesheet" href="{% static_versioned 'styles/styles.css' %}">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CXHF54ENG"></script>
@@ -27,17 +28,23 @@
   gtag('config', 'G-6CXHF54ENG');
 </script>
 
-<nav class="navbar-title">
-  <div class="container">
-    <a href="/" class="title-link" id="title-link">meditationposture.net</a>
-  </div>
-</nav>
+<!-- htmx and alpine; history navigation reloads the page so that page scripts run -->
+<meta name="htmx-config" content='{"historyCacheSize": 0, "refreshOnHistoryMiss": true}'>
+<script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+    integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.17.4/dist/cdn.min.js"
+    integrity="sha384-5/joNqFnRyVWzXp99bHot6RHG+EksGp+USSgZwPar7T9SD9PKKER37n/8bXBAZGd" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- hx-boost: links load the next page without a full page reload -->
+<body hx-boost="true">
 
 <div class="container">
 
-  <div class="row content">
+  <div class="content">
 
-    <div class="col-sm-10 content-left">
+    <div class="content-left">
 
       <div class="panel-background">
         {% block content %}
@@ -48,7 +55,7 @@
 
     </div>
 
-    <div class="col-sm-2 nav">
+    <div class="nav">
 
       <div class="panel-background">
         {% include 'nav.html' %}
@@ -60,6 +67,5 @@
 
 </div>
 
-<!-- bootstrap javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>

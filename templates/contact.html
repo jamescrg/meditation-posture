@@ -9,14 +9,14 @@
 
 {{ form.media }}
 
-	<form action="/contact/" class="form-horizontal" method="post" role="form">
+	<form action="/contact/" method="post" role="form" hx-boost="false">
 
     {% csrf_token %}
 
     {{ form.as_p }}
 
     <p>
-      <input type="submit" value="Submit" class="btn btn-default">
+      <input type="submit" value="Submit" class="button">
     </p>
 
 	</form>

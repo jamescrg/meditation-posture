@@ -1,6 +1,10 @@
 /* Tailwind CSS Color Palette as CSS Variables */
 
 :root {
+  /* Average color of the background image, shown while the image loads
+     (a site color, not part of the Tailwind palette) */
+  --bg-color: #d2d4d3;
+
   /* Slate - cool gray, perfect for misty/atmospheric themes */
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
