@@ -28,7 +28,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django_recaptcha",
     "app",
 ]
 
@@ -131,12 +130,6 @@ EMAIL_HOST_PASSWORD = settings_local.EMAIL_HOST_PASSWORD
 SERVER_EMAIL = settings_local.SERVER_EMAIL
 DEFAULT_FROM_EMAIL = getattr(settings_local, "DEFAULT_FROM_EMAIL", settings_local.SERVER_EMAIL)
 ADMINS = settings_local.ADMINS
-
-# RECAPTCHA
-RECAPTCHA_PUBLIC_KEY = settings_local.RECAPTCHA_PUBLIC_KEY
-RECAPTCHA_PRIVATE_KEY = settings_local.RECAPTCHA_PRIVATE_KEY
-RECAPTCHA_REQUIRED_SCORE = 0.5  # Score threshold for v3 (0.0 to 1.0, lower is more lenient)
-RECAPTCHA_DOMAIN = "www.google.com"  # Use "www.recaptcha.net" if google.com is blocked
 
 
 # Logging — standardized across all apps; logs live in <app>/logs/

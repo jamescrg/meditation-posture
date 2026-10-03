@@ -17,7 +17,6 @@ class SiteViewTest(TestCase):
             "head",
             "exercises",
             "sources",
-            "contact",
         ]
 
     def test_view_base_url(self):

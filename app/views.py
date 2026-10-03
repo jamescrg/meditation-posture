@@ -1,11 +1,7 @@
 from pathlib import Path
 
-from django.core.mail import send_mail
 from django.shortcuts import redirect, render
 import markdown
-
-from app.forms import ContactForm
-from config import settings_local
 
 
 def index(request, page):
@@ -22,7 +18,6 @@ def index(request, page):
         "head",
         "exercises",
         "sources",
-        "contact",
     ]
 
     try:
@@ -46,41 +41,3 @@ def index(request, page):
         }
 
         return render(request, "article.html", context)
-
-
-def contact(request):
-    """Allow the user to send an email to the author."""
-
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-
-        if form.is_valid():
-            name = form.cleaned_data["name"]
-            email = form.cleaned_data["email"]
-            subject = form.cleaned_data["subject"]
-            message = form.cleaned_data["message"]
-
-            # Include sender information in the message body
-            message = f"From: {name}\nEmail: {email}\n\n{message}"
-
-            send_mail(
-                "meditationposture.net - " + name + " " + subject,
-                message,
-                settings_local.SERVER_EMAIL,  # Use the server's email as sender
-                settings_local.AUTHOR,
-                fail_silently=False,
-            )
-            context = {
-                "page": "contact",
-            }
-            return render(request, "contact-success.html", context)
-
-    else:
-        form = ContactForm()
-
-    context = {
-        "page": "contact",
-        "form": form,
-    }
-
-    return render(request, "contact.html", context)

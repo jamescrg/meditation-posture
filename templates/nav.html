@@ -1,7 +1,7 @@
 
 <ul id="site-nav" :class="open && 'open'">
 
-    <li id="top-nav-menu-item">
+    <li>
         <a {% if page == 'about' %} id="focal" {% endif %}
             href="{% url 'page' 'about' %}">About</a>
 	</li>
@@ -59,10 +59,5 @@
     <li>
 		<a {% if page == 'sources' %} id="focal" {% endif %}
             href="{% url 'page' 'sources' %}">Sources</a>
-    </li>
-
-    <li id="bottom-nav-menu-item">
-		<a {% if page == 'contact' %} id="focal" {% endif %}
-            href="{% url 'page' 'contact' %}" hx-boost="false">Contact</a>
     </li>
 </ul>

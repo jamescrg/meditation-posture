@@ -19,3 +19,7 @@ Much of the information on this website has been gathered from books. A list of 
 ## Disclaimer
 
 I am not a medical doctor, and I am completely unqualified to give anyone medical advice. If you are in significant pain or are suffering from an injury or disability, please consult a physician before attempting to utilize any of the information presented here. Although I have tried to be as comprehensive as possible, much of the content here is based on my own anecdotal experience, and your own results may vary.
+
+## Contact
+
+You are welcome to email me at jamespcraig@gmail.com. I also keep a blog at [jamescraig.dev](https://jamescraig.dev).
