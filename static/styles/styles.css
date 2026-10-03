@@ -24,7 +24,7 @@ body {
   font-size: 1rem;
   line-height: 1.42857143;
   margin: 0;
-  padding: 1rem 0 2.5rem 0;
+  padding: 1.5rem 0 2.5rem 0;
 }
 
 /* background image under a warm tint, fixed behind the page */
@@ -67,7 +67,7 @@ layout
 
 /* the article, with the navigation in its own fixed-width sheet to the right */
 .content {
-  column-gap: 1rem;
+  column-gap: 1.5rem;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 12rem;
 }
@@ -92,6 +92,10 @@ layout
 
 /* phones: keep the padding small so the text column stays wide */
 @media (max-width: 767px) {
+  body {
+    padding-top: 1rem;
+  }
+
   .panel-background {
     padding: 1rem;
   }
@@ -204,12 +208,12 @@ navigation
 
 /* the navigation sheet stays in view while the article scrolls */
 .nav .panel-background {
-  max-height: calc(100vh - 2rem);
+  max-height: calc(100vh - 3rem);
   overflow-y: auto;
   /* extra space on the left sets the short links nearer the middle of the sheet */
   padding: 1.5rem 1rem 1.5rem 2.5rem;
   position: sticky;
-  top: 1rem;
+  top: 1.5rem;
 }
 
 .nav ul {
