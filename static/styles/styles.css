@@ -98,12 +98,13 @@ typography
 ------------------------------------------------*/
 
 h1, h2, h3 {
+  /* a darker shade of the link green */
+  color: var(--lime-900);
   font-weight: 500;
   line-height: 1.1;
 }
 
 h1 {
-	color: var(--stone-900);
 	font-size: 1.3rem;
 	margin:0;
   margin-bottom: 1.13rem;
@@ -111,14 +112,12 @@ h1 {
 }
 
 h2 {
-	color: var(--stone-800);
 	font-size: 1.2rem;
 	margin: 1.5rem 0 1.13rem 0.63rem;
 	padding: 0;
 }
 
 h3 {
-	color: var(--stone-800);
 	font-size: 1.1rem;
 	margin:0;
   margin-left: 0.31rem;
@@ -158,6 +157,7 @@ blockquote p:last-child {
 }
 
 .img-responsive {
+  border-radius: 4px;
   display: block;
   height: auto;
   max-width: 100%;
