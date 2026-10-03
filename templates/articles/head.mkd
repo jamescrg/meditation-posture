@@ -15,7 +15,7 @@ One popular method to get the feel of drawing in the chin without drooping the h
 <br>
 Even while the chin is drawn in, the head should be held level. Look at how Gudo Nishima, famous Soto Zen priest, held his head during meditation.
 
-<div class="center-image"><img src="/static/images/gudo-nishijima.png" class="page-standard img-responsive"></div>
+<div class="center-image"><img src="/static/images/gudo-nishijima.png" class="page-standard img-responsive" style="width: 350px;"></div>
 <div class="caption">Gudo Nishijima</div>
 
 
