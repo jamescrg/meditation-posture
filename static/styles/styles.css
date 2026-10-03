@@ -87,7 +87,7 @@ layout
   /* a soft shadow lifts the sheet off the background */
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.14), 0 6px 18px rgb(0 0 0 / 0.1);
   margin-bottom: 1rem;
-	padding: 1.5rem 2rem;
+	padding: 2rem;
 }
 
 /* phones: keep the padding small so the text column stays wide */
@@ -207,7 +207,7 @@ navigation
   max-height: calc(100vh - 2rem);
   overflow-y: auto;
   /* extra space on the left sets the short links nearer the middle of the sheet */
-  padding: 1rem 1rem 1rem 2.5rem;
+  padding: 1.5rem 1rem 1.5rem 2.5rem;
   position: sticky;
   top: 1rem;
 }
