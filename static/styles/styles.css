@@ -27,9 +27,12 @@ body {
   padding: 1rem 0 2.5rem 0;
 }
 
-/* background image, fixed behind the page */
+/* background image under a warm tint, fixed behind the page */
 body::before {
-  background: var(--bg-color) url('/static/images/misty-hills-bg.webp') center / cover;
+  background:
+    linear-gradient(var(--bg-warmth), var(--bg-warmth)),
+    var(--bg-color) url('/static/images/misty-hills-bg.webp') center / cover;
+  background-blend-mode: multiply, normal;
   content: '';
   inset: 0;
   position: fixed;
@@ -77,7 +80,9 @@ layout
 
 .panel-background {
   /* light gray, slightly see-through: the percentage is how solid the sheet is */
-  background: color-mix(in srgb, var(--neutral-200) 89%, transparent);
+  background: color-mix(in srgb, var(--sheet-color) 65%, transparent);
+  /* a faint dark edge, so the sheet shows against pale parts of the photo */
+  border: 1px solid rgb(0 0 0 / 0.13);
   border-radius: 10px;
   /* a soft shadow lifts the sheet off the background */
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.14), 0 6px 18px rgb(0 0 0 / 0.1);

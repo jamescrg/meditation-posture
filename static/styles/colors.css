@@ -5,6 +5,13 @@
      (a site color, not part of the Tailwind palette) */
   --bg-color: #d2d4d3;
 
+  /* Warm tint laid over the background image: nearer white is subtler,
+     more yellow-orange is warmer */
+  --bg-warmth: #fff9ef;
+
+  /* Sheet color: a light gray with a little warmth */
+  --sheet-color: #eeebe6;
+
   /* Slate - cool gray, perfect for misty/atmospheric themes */
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
