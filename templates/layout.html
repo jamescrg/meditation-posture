@@ -3,6 +3,51 @@
 <head>
 
 <meta charset="UTF-8" content="">
+
+<!-- theme: the visitor's saved choice, otherwise the system setting; set early to avoid a flash -->
+<script>
+  (function () {
+    var root = document.documentElement;
+    var system = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function chosen() {
+      try { return localStorage.getItem('theme'); } catch (e) { return null; }
+    }
+
+    root.dataset.theme = chosen() || (system.matches ? 'dark' : 'light');
+
+    // the pressed moon is the visitor's choice; with none made, neither
+    function reflect() {
+      var choice = chosen();
+      document.querySelectorAll('[data-set-theme]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(choice === b.dataset.setTheme));
+      });
+    }
+
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-set-theme]');
+      if (!b) return;
+      var choice = b.dataset.setTheme;
+      if (chosen() === choice) {
+        // a second press hands the choice back to the system
+        try { localStorage.removeItem('theme'); } catch (e) {}
+        root.dataset.theme = system.matches ? 'dark' : 'light';
+      } else {
+        root.dataset.theme = choice;
+        try { localStorage.setItem('theme', choice); } catch (e) {}
+      }
+      reflect();
+    });
+
+    system.addEventListener('change', function (e) {
+      if (!chosen()) root.dataset.theme = e.matches ? 'dark' : 'light';
+    });
+
+    // the buttons are replaced on each page change
+    document.addEventListener('DOMContentLoaded', reflect);
+    document.addEventListener('htmx:afterSettle', reflect);
+  })();
+</script>
 <title>meditationposture.net</title>
 {% load cache_busting %}
 
@@ -77,6 +122,15 @@
         </svg>
       </button>
       <div class="nav-overlay" @click="open = false"></div>
+
+      <div class="theme-switch">
+        <button type="button" data-set-theme="light" aria-label="Light mode">
+          <span class="moon moon-light"></span>
+        </button>
+        <button type="button" data-set-theme="dark" aria-label="Dark mode">
+          <span class="moon moon-dark"></span>
+        </button>
+      </div>
 
       <div class="panel-background">
         <button type="button" class="nav-close" aria-label="Close menu" @click="open = false">

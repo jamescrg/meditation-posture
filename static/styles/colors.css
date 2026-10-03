@@ -12,6 +12,20 @@
   /* Sheet color: a light gray with a little warmth */
   --sheet-color: #eeebe6;
 
+  /* Site colors by role; the dark theme below redefines them */
+  color-scheme: light;
+  --text: var(--stone-800);
+  --text-quiet: var(--stone-700);
+  --heading: var(--lime-900);
+  --link: var(--lime-800);
+  --link-hover: var(--lime-600);
+  --edge: rgb(0 0 0 / 0.13);
+  --sheet-shadow: 0 1px 3px rgb(0 0 0 / 0.14), 0 6px 18px rgb(0 0 0 / 0.1);
+  --button-bg: color-mix(in srgb, var(--sheet-color) 92%, black);
+  --image-filter: sepia(0.25);
+  --cutout-bg: transparent;
+  --bg-filter: none;
+
   /* Slate - cool gray, perfect for misty/atmospheric themes */
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
@@ -297,4 +311,28 @@
   --rose-800: #9f1239;
   --rose-900: #881337;
   --rose-950: #4c0519;
+}
+
+/* Dark theme: the same misty hills at night. The filter darkens the photo
+   and raises its contrast so the hills still show, the sheets are dark,
+   and text and greens are lightened to match. */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-color: #272a26;
+  --bg-warmth: #e9eee1;
+  /* brightness is how light the night is; contrast is how much the hills stand out */
+  --bg-filter: contrast(1.5) brightness(0.3);
+  --sheet-color: #33362f;
+  --text: #d9d5cd;
+  --text-quiet: #b3aea4;
+  --heading: #c3d39f;
+  --link: #a9c47a;
+  --link-hover: #c6dd9b;
+  --edge: rgb(255 255 255 / 0.1);
+  --sheet-shadow: 0 1px 3px rgb(0 0 0 / 0.4), 0 6px 18px rgb(0 0 0 / 0.3);
+  --button-bg: color-mix(in srgb, var(--sheet-color) 85%, white);
+  /* photos are dimmed a little so their pale walls do not glare */
+  --image-filter: sepia(0.25) brightness(0.82);
+  /* the dark cushion cut-outs need a light card behind them */
+  --cutout-bg: #d8d3c8;
 }

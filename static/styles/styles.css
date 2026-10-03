@@ -19,7 +19,7 @@ body and links
 
 body {
   background: var(--bg-color);
-	color: var(--stone-800);
+	color: var(--text);
 	font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.42857143;
@@ -33,6 +33,7 @@ body::before {
     linear-gradient(var(--bg-warmth), var(--bg-warmth)),
     var(--bg-color) url('/static/images/misty-hills-bg.webp') center / cover;
   background-blend-mode: multiply, normal;
+  filter: var(--bg-filter);
   content: '';
   inset: 0;
   position: fixed;
@@ -40,13 +41,13 @@ body::before {
 }
 
 a, a:visited {
-  color: var(--lime-800);
+  color: var(--link);
   outline: none;
 	text-decoration: none;
 }
 
 a:hover {
-	color: var(--lime-600);
+	color: var(--link-hover);
 	text-decoration: none;
 }
 
@@ -81,11 +82,11 @@ layout
 .panel-background {
   /* light gray, slightly see-through: the percentage is how solid the sheet is */
   background: color-mix(in srgb, var(--sheet-color) 65%, transparent);
-  /* a faint dark edge, so the sheet shows against pale parts of the photo */
-  border: 1px solid rgb(0 0 0 / 0.13);
+  /* a faint edge, so the sheet shows against pale parts of the photo */
+  border: 1px solid var(--edge);
   border-radius: 10px;
   /* a soft shadow lifts the sheet off the background */
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.14), 0 6px 18px rgb(0 0 0 / 0.1);
+  box-shadow: var(--sheet-shadow);
   margin-bottom: 1rem;
 	padding: 2rem;
 }
@@ -108,7 +109,7 @@ typography
 
 h1, h2, h3 {
   /* a darker shade of the link green */
-  color: var(--lime-900);
+  color: var(--heading);
   font-weight: 500;
   line-height: 1.1;
 }
@@ -147,7 +148,7 @@ p a {
 
 blockquote {
   border: none;
-  color: var(--stone-700);
+  color: var(--text-quiet);
   font-style: italic;
   margin: 1.25rem 6.25rem 1.25rem 4.38rem;
   padding: 0;
@@ -191,7 +192,7 @@ blockquote p:last-child {
 }
 
 .content li {
-	color: var(--stone-800);
+	color: var(--text);
 	font-size: 1rem;
 	padding: 0.63rem 0.94rem;
 }
@@ -235,13 +236,15 @@ navigation
    and a faint edge like the one on the sheets */
 .img-responsive,
 .photo-row img {
-  border: 1px solid rgb(0 0 0 / 0.13);
-  filter: sepia(0.25);
+  border: 1px solid var(--edge);
+  filter: var(--image-filter);
 }
 
-/* the cushion cut-outs have no background, so no edge to outline */
+/* the cushion cut-outs have no background, so no edge to outline;
+   in the dark theme they sit on a light card */
 .img-responsive[src$="/zafu.png"],
 .img-responsive[src$="/zafu-towel.png"] {
+  background: var(--cutout-bg);
   border: none;
 }
 
@@ -272,7 +275,7 @@ navigation
 }
 
 .caption{
-  color: var(--stone-700);
+  color: var(--text-quiet);
   font-size: 0.9rem;
 	font-weight: 600;
   margin-bottom: 1.25rem;
@@ -282,6 +285,66 @@ navigation
 
 #focal {
   font-weight: 600;
+}
+
+/*------------------------------------------------
+theme switch
+------------------------------------------------*/
+
+/* day and night: two small moons in the upper right corner of the window */
+.theme-switch {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+  position: fixed;
+  right: 15px;
+  top: 0.15rem;
+  z-index: 10;
+}
+
+/* with room beside the sheets, they come down level with the sheets' top edge */
+@media (min-width: 1280px) {
+  .theme-switch {
+    right: 1rem;
+    top: 1.25rem;
+  }
+}
+
+.theme-switch button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0.25rem;
+}
+
+/* the moons keep their own colors in both themes: day is paper, night is ink */
+.theme-switch .moon {
+  border: 1px solid #5f594e;
+  border-radius: 50%;
+  display: block;
+  height: 0.7rem;
+  opacity: 0.6;
+  transition: opacity 0.15s, transform 0.15s;
+  width: 0.7rem;
+}
+
+.theme-switch .moon-light {
+  background: #eeebe6;
+}
+
+.theme-switch .moon-dark {
+  background: #33362f;
+}
+
+[data-theme="dark"] .theme-switch .moon {
+  border-color: #cfc9bc;
+}
+
+/* the chosen moon is full strength and slightly larger */
+.theme-switch button[aria-pressed='true'] .moon {
+  opacity: 1;
+  transform: scale(1.25);
 }
 
 .nav-toggle,
@@ -300,12 +363,12 @@ navigation
   .js .nav-toggle {
     align-items: center;
     /* the sheet color, a few shades darker so it shows against the sheets */
-    background: color-mix(in srgb, var(--sheet-color) 92%, black);
-    border: 1px solid rgb(0 0 0 / 0.13);
+    background: var(--button-bg);
+    border: 1px solid var(--edge);
     border-radius: 50%;
     bottom: 1.25rem;
     box-shadow: 0 2px 8px rgb(0 0 0 / 0.18);
-    color: var(--lime-800);
+    color: var(--link);
     cursor: pointer;
     display: flex;
     height: 3rem;
@@ -358,10 +421,30 @@ navigation
     visibility: visible;
   }
 
+  /* the theme switch sits in the drawer, level with the close button */
+  .js .theme-switch {
+    left: calc(100vw - min(75vw, 18rem) + 1.5rem);
+    opacity: 0;
+    pointer-events: none;
+    right: auto;
+    top: 1.35rem;
+    transition: opacity 0.2s ease-out;
+    z-index: 202;
+  }
+
+  .js .nav.open .theme-switch {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .js .theme-switch button {
+    padding: 0.5rem;
+  }
+
   .js .nav-close {
     background: none;
     border: none;
-    color: var(--stone-700);
+    color: var(--text-quiet);
     cursor: pointer;
     display: flex;
     margin: 0 -0.5rem 0.5rem auto;
