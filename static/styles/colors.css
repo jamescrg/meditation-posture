@@ -1,9 +1,10 @@
 /* Tailwind CSS Color Palette as CSS Variables */
 
 :root {
-  /* Average color of the background image, shown while the image loads
-     (a site color, not part of the Tailwind palette) */
-  --bg-color: #d2d4d3;
+  /* Background image, and its average color, shown while the image loads.
+     Change the preload link in layout.html to match. */
+  --bg-image: url('/static/images/misty-hills4-bg.webp');
+  --bg-color: #c4c1b8;
 
   /* Warm tint laid over the background image: nearer white is subtler,
      more yellow-orange is warmer */
@@ -24,7 +25,9 @@
   --button-bg: color-mix(in srgb, var(--sheet-color) 92%, black);
   --image-filter: sepia(0.25);
   --cutout-bg: transparent;
-  --bg-filter: none;
+  /* Brings the photo into the site's warm grays: color mostly removed,
+     a sepia tone added, contrast lowered and the whole thing lightened */
+  --bg-filter: saturate(0.15) sepia(0.3) contrast(0.7) brightness(1.2);
 
   /* Slate - cool gray, perfect for misty/atmospheric themes */
   --slate-50: #f8fafc;
@@ -320,8 +323,8 @@
   color-scheme: dark;
   --bg-color: #272a26;
   --bg-warmth: #e9eee1;
-  /* brightness is how light the night is; contrast is how much the hills stand out */
-  --bg-filter: contrast(1.5) brightness(0.3);
+  /* brightness is how light the night is */
+  --bg-filter: saturate(0.25) sepia(0.1) contrast(1.2) brightness(0.38);
   --sheet-color: #33362f;
   --text: #d9d5cd;
   --text-quiet: #b3aea4;

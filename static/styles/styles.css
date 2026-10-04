@@ -31,7 +31,7 @@ body {
 body::before {
   background:
     linear-gradient(var(--bg-warmth), var(--bg-warmth)),
-    var(--bg-color) url('/static/images/misty-hills-bg.webp') center / cover;
+    var(--bg-color) var(--bg-image) center / cover;
   background-blend-mode: multiply, normal;
   filter: var(--bg-filter);
   content: '';
@@ -81,7 +81,7 @@ layout
 
 .panel-background {
   /* light gray, slightly see-through: the percentage is how solid the sheet is */
-  background: color-mix(in srgb, var(--sheet-color) 65%, transparent);
+  background: color-mix(in srgb, var(--sheet-color) 85%, transparent);
   /* a faint edge, so the sheet shows against pale parts of the photo */
   border: 1px solid var(--edge);
   border-radius: 10px;
