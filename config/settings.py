@@ -124,7 +124,11 @@ STATICFILES_DIRS = [str(BASE_DIR.joinpath("static"))]
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = settings_local.EMAIL_HOST
 EMAIL_USE_TLS = True
-EMAIL_PORT = 587
+# Mailgun also listens on 2525, for a host whose way out on 587 is shut
+EMAIL_PORT = getattr(settings_local, "EMAIL_PORT", 587)
+# A mail server that does not answer fails the send in seconds rather
+# than holding a request until the worker is killed
+EMAIL_TIMEOUT = getattr(settings_local, "EMAIL_TIMEOUT", 10)
 EMAIL_HOST_USER = settings_local.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = settings_local.EMAIL_HOST_PASSWORD
 SERVER_EMAIL = settings_local.SERVER_EMAIL
