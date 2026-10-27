@@ -23,6 +23,11 @@
   --edge: rgb(0 0 0 / 0.13);
   --sheet-shadow: 0 1px 3px rgb(0 0 0 / 0.14), 0 6px 18px rgb(0 0 0 / 0.1);
   --button-bg: color-mix(in srgb, var(--sheet-color) 92%, black);
+  /* behind the current page's link in the navigation: a see-through gray, so it
+     darkens the sheet the same amount over light and dark parts of the photo */
+  --nav-current-bg: rgb(0 0 0 / 0.06);
+  /* behind a nav link under the pointer: fainter than the current link */
+  --nav-hover-bg: rgb(0 0 0 / 0.03);
   --image-filter: sepia(0.25);
   --cutout-bg: transparent;
   /* Brings the photo into the site's warm grays: color mostly removed,
@@ -318,7 +323,9 @@
 
 /* Dark theme: the same misty hills at night. The filter darkens the photo
    and raises its contrast so the hills still show, the sheets are dark,
-   and text and greens are lightened to match. */
+   and text and greens are lightened to match. The greens lean a little
+   toward blue and are less saturated than the day ones, so they read as
+   sage rather than acid against the dark sheet. */
 [data-theme="dark"] {
   color-scheme: dark;
   --bg-color: #272a26;
@@ -328,12 +335,14 @@
   --sheet-color: #33362f;
   --text: #d9d5cd;
   --text-quiet: #b3aea4;
-  --heading: #c3d39f;
-  --link: #a9c47a;
-  --link-hover: #c6dd9b;
+  --heading: #bad4b5;
+  --link: #9ec59b;
+  --link-hover: #bcdeb7;
   --edge: rgb(255 255 255 / 0.1);
   --sheet-shadow: 0 1px 3px rgb(0 0 0 / 0.4), 0 6px 18px rgb(0 0 0 / 0.3);
   --button-bg: color-mix(in srgb, var(--sheet-color) 85%, white);
+  --nav-current-bg: rgb(0 0 0 / 0.18);
+  --nav-hover-bg: rgb(0 0 0 / 0.09);
   /* photos are dimmed a little so their pale walls do not glare */
   --image-filter: sepia(0.25) brightness(0.82);
   /* the dark cushion cut-outs need a light card behind them */

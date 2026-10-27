@@ -211,8 +211,13 @@ navigation
 .nav .panel-background {
   max-height: calc(100vh - 3rem);
   overflow-y: auto;
-  /* extra space on the left sets the short links nearer the middle of the sheet */
-  padding: 1.5rem 1rem 1.5rem 2.5rem;
+  /* extra space on the left sets the short links nearer the middle of the sheet;
+     the side padding is kept in variables so the current link's tint can use it */
+  --nav-pad-left: 2.5rem;
+  --nav-pad-right: 1rem;
+  /* how far the current link's tint stops short of the sheet's edges */
+  --nav-gap: 1rem;
+  padding: 1.5rem var(--nav-pad-right) 1.5rem var(--nav-pad-left);
   position: sticky;
   top: 1.5rem;
 }
@@ -223,9 +228,32 @@ navigation
 	padding: 0;
 }
 
+/* each link fills its row, stopping the same small gap short of the sheet's
+   edge on both sides; the padding is taken back by the margins so the text
+   stays in line */
 .nav ul li a {
-	margin: 0;
-	padding: 0;
+  border-radius: 4px;
+  display: block;
+  margin: -0.25rem calc(var(--nav-gap) - var(--nav-pad-right)) -0.25rem calc(var(--nav-gap) - var(--nav-pad-left));
+  padding: 0.25rem max(0rem, calc(var(--nav-pad-right) - var(--nav-gap))) 0.25rem max(0rem, calc(var(--nav-pad-left) - var(--nav-gap)));
+}
+
+/* hovering or clicking keeps the link's green; a faint row shows instead,
+   and the same row marks the link reached with the keyboard */
+.nav ul li a:hover,
+.nav ul li a:active {
+  color: var(--link);
+}
+
+.nav ul li a:focus-visible {
+  background: var(--nav-hover-bg);
+}
+
+/* only where there is a pointer, so the row does not stay lit after a tap */
+@media (hover: hover) {
+  .nav ul li a:hover {
+    background: var(--nav-hover-bg);
+  }
 }
 
 .center-image {
@@ -283,7 +311,9 @@ navigation
   text-align: center;
 }
 
+/* the current page's link: a darker shade of the sheet behind its row */
 #focal {
+  background: var(--nav-current-bg);
   font-weight: 600;
 }
 
@@ -404,7 +434,10 @@ theme switch
     margin: 0;
     max-height: none;
     overflow-y: auto;
-    padding: 1rem 1.5rem 2rem 1.75rem;
+    --nav-pad-left: 1.75rem;
+    --nav-pad-right: 1.5rem;
+    --nav-gap: 0.5rem;
+    padding: 1rem var(--nav-pad-right) 2rem var(--nav-pad-left);
     position: fixed;
     right: 0;
     top: 0;
@@ -457,9 +490,10 @@ theme switch
     text-align: left;
   }
 
+  /* taller rows in the drawer, for fingers */
   .js .nav ul li a {
-    display: block;
-    padding: 0.65rem 0;
+    margin-block: 0;
+    padding-block: 0.65rem;
   }
 }
 
@@ -473,6 +507,9 @@ theme switch
 
 @media (max-width: 768px) {
   .nav .panel-background {
+    --nav-pad-left: 1rem;
+    --nav-pad-right: 1rem;
+    --nav-gap: 0.5rem;
     max-height: none;
     padding: 0.5rem 1rem;
     position: static;
